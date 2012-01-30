@@ -1,0 +1,71 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 426fdceb55902a52c9a0da4650c6696a6d60c89f Changes
+SHA1 1d54db0b8134eb1c8ea0cee400f9dc612bcaa61a LICENSE
+SHA1 4a1b62ffa8d72794cdb87428ff8fcd282bb23bed MANIFEST
+SHA1 ea8f257bf0dbf71c96faf50a2296b14129cf5310 META.yml
+SHA1 7150e5e086ef493e1e527a1eeec44a8344b80db6 Makefile.PL
+SHA1 4ee65171596597d348205c9c0fac6272f5a9fe0e README
+SHA1 96b7f351ce6844bc3d08b88090207d006a09a193 examples/basic.pl
+SHA1 365558b26d2b02d4b0893620acc2f982e3ca4a65 examples/table-stuff.pl
+SHA1 5d94bc10deff1dd74e4bc5dfa6fc015e39271f15 inc/Module/AutoInstall.pm
+SHA1 40106479d4e07f379cb82ca1d69fca92e3a40f47 inc/Module/Install.pm
+SHA1 34a24a530ecf0365cc02e4150b06c9bed702a441 inc/Module/Install/AutoInstall.pm
+SHA1 c04f94f91fa97b9f8cfb5a36071098ab0e6c78e3 inc/Module/Install/AutoManifest.pm
+SHA1 ae8aa01a73cb83da31c39e8eed1120c59cb530a1 inc/Module/Install/Base.pm
+SHA1 5c87d2d0e2c08b5173259006c88ad81c24303f9d inc/Module/Install/Can.pm
+SHA1 98daf9d8c50b4b7e8988cf1fa2b86044ad219533 inc/Module/Install/Fetch.pm
+SHA1 f3e008113f7f49b0625083b6cc358a312854f613 inc/Module/Install/Include.pm
+SHA1 e67589fcbacdda6c98ff34d8e26a004ab0467bdc inc/Module/Install/Makefile.pm
+SHA1 209ea405d4ab94475661bb450d0ea042d2ec25b5 inc/Module/Install/Metadata.pm
+SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
+SHA1 b86d0385e10881db680d28bde94f275e49e34a27 inc/Module/Install/TrustMetaYml.pm
+SHA1 1326052d1df1065debee74f9d8583a734b9b3d00 inc/Module/Install/Win32.pm
+SHA1 bb607f3715c40fc3bc1c46496587cdb215bc4fa2 inc/Module/Install/WriteAll.pm
+SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
+SHA1 6b807287940754cc31a3db59f2b22e363d5525be inc/Module/Package/Dist/RDF.pm
+SHA1 775bd24f2fdbb6dce51a8b5b0cdb01fccfce83c4 inc/Scalar/Util.pm
+SHA1 b1b664983568bf822c327599eb88e223483ae96a inc/Scalar/Util/PP.pm
+SHA1 eef6bff62046bff2ce08ba132d0b58fba30f40b4 inc/YAML/Tiny.pm
+SHA1 258736850f2738c8a1b105f1e2406170aa884f43 lib/HTML/HTML5/Table.pm
+SHA1 ba1129555f70c58ddd10541a305294c61f4960b9 lib/HTML/HTML5/Table/Body.pm
+SHA1 8e07f404d69c86937c8f078efcd08404eb8f2c61 lib/HTML/HTML5/Table/Cell.pm
+SHA1 9dd548fcb208679ccd4ff22cce8b2f02de8cbd05 lib/HTML/HTML5/Table/Col.pm
+SHA1 924a420d83782c8bd63c60ca1aad518f4d05df6f lib/HTML/HTML5/Table/ColGroup.pm
+SHA1 157e78b78d83b9a78fc01e28dee9add36b22fe21 lib/HTML/HTML5/Table/Foot.pm
+SHA1 8c47c68c628ba30a642f4ba18ac43ecafd244672 lib/HTML/HTML5/Table/Head.pm
+SHA1 24293c45c12fad5140751d3f55b63235b6d227d3 lib/HTML/HTML5/Table/HeadCell.pm
+SHA1 cbf1bf3f273983e4883cddbc8eff5822ce6b8d4f lib/HTML/HTML5/Table/Row.pm
+SHA1 2c0eedf95b46778c89d8eda4a80692947b1a19d0 lib/HTML/HTML5/Table/Section.pm
+SHA1 1a25ee16cbb3e902ed6fd0466b05eae6c9f1897a lib/HTML/HTML5/ToText.pm
+SHA1 aa977f2bb52c213c9f429d36bb2c3260fa45f959 lib/HTML/HTML5/ToText/Trait/RenderTables.pm
+SHA1 1a4ce985ba6bcfd48b6ed28167f2aa802bc1a96e lib/HTML/HTML5/ToText/Trait/ShowImages.pm
+SHA1 5e517bcffcd2f0b68fae4598259493a87afb8d90 lib/HTML/HTML5/ToText/Trait/ShowLinks.pm
+SHA1 b87db55cbc6c6b203d1a3476b3a7d85547b7fcf4 lib/HTML/HTML5/ToText/Trait/TextFormatting.pm
+SHA1 86e94fe1b32a83d515d3b32c99cd467075ee6dd6 meta/changes.ttl
+SHA1 b0b7570927e10bb7882e54418dd22251f4c6c269 meta/doap.ttl
+SHA1 1df63e7ed102d69ed051b30966d52a4e1c142229 meta/makefile.ttl
+SHA1 77d11040c6db4da4e9b1d747352f0fc85daefdbf t/01basic.t
+SHA1 42ecbd580f75ca75ee4c6b05affe263d66fa216c t/02simple.t
+SHA1 899b3462fc2a0a050482dbb269311ab20cc4b46c t/03tables.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEARECAAYFAk8nIIEACgkQzr+BKGoqfTmzugCeIavD8nU/F6XC1iynON70PZbb
+i4AAnAke8rkq74IOZBYVkiEzvrksyFGR
+=0GAA
+-----END PGP SIGNATURE-----
