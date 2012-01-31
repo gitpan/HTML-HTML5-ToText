@@ -6,7 +6,7 @@ use utf8;
 
 BEGIN {
 	$HTML::HTML5::ToText::Trait::RenderTables::AUTHORITY = 'cpan:TOBYINK';
-	$HTML::HTML5::ToText::Trait::RenderTables::VERSION   = '0.001';
+	$HTML::HTML5::ToText::Trait::RenderTables::VERSION   = '0.002';
 }
 
 use Moose::Role;
@@ -60,8 +60,8 @@ rendering, or whether to use the default table rendering.
    ->with_traits(qw/RenderTables/)
    ->new(should_render_table => sub
      {
-       my ($self, $table_node) = @_;
-       if ($table_node->getAttribute('table') =~ /layout/)
+       my ($self, $element) = @_;
+       if ($element->getAttribute('class') =~ /layout/i)
        {
          return 1;  # true - fancy rendering
        }
@@ -75,8 +75,9 @@ rendering, or whether to use the default table rendering.
 The table rendering engine understands the C<< <caption> >>, C<< <thead> >>,
 C<< <tbody> >>, C<< <tfoot> >>, C<< <tr> >>, C<< <th> >>, C<< <td> >>,
 C<< <colgroup> >> and C<< <col> >> elements; and the C<< span >>,
-C<< colspan >> and C<< rowspan >> attributes. It doesn't currently do
-C<< align >> / C<< valign >>, but one day...
+C<< align >> (values "left", "right" and "center"), C<< colspan >> and
+C<< rowspan >> attributes. It doesn't currently do C<< valign >>, but maybe
+one day...
 
 =head1 BUGS
 

@@ -39,4 +39,4 @@ resources:
   homepage: https://metacpan.org/release/HTML-HTML5-ToText
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-html-html5-totext
-version: 0.001
+version: 0.002

@@ -4,9 +4,14 @@ use 5.010;
 use namespace::autoclean;
 use utf8;
 
+BEGIN {
+	$HTML::HTML5::Table::Row::AUTHORITY = 'cpan:TOBYINK';
+	$HTML::HTML5::Table::Row::VERSION   = '0.002';
+}
+
 use List::Util qw/max/;
 use Moose;
-use POSIX qw/ceil/;
+use POSIX qw/ceil floor/;
 
 has node => (
 	is        => 'rw',
@@ -78,6 +83,20 @@ sub to_text
 			$n += $c->width + 3;
 		}
 		$n -= 3;
+		
+		my $align = $cell->align;
+		my $format = sub
+		{
+			my ($str) = @_;
+			return (' ' x $n) unless defined $str;
+			if ($align =~ /middle|center|centre/i)
+			{
+				my $before = floor(($n - length $str) / 2);
+				my $after  = $n - ($before + length $str);
+				return (' ' x $before).$str.(' ' x $after);
+			}
+			sprintf($align =~ /right/i ? "% ${n}s" : "% -${n}s", $str);
+		};
 
 		my @celltext  = split /\r?\n/, $cell->celltext;
 		my $skiplines = 0;
@@ -89,17 +108,14 @@ sub to_text
 		
 		for my $i (0 .. $#lines)
 		{
-			my $ct = defined $celltext[$i + $skiplines]
-				? sprintf("% -${n}s", $celltext[$i + $skiplines])
-				: (' ' x $n);
-			$lines[$i] .= $ct;
+			$lines[$i] .= $format->( $celltext[$i + $skiplines] );
 			$lines[$i] .= ' | ' unless $lastcell;
 		}
 		
 		if (defined (my $final = $celltext[ $skiplines + scalar(@lines) ]))
 		{
 			$trailer =~ s/\+\-$/| /;
-			$trailer .= sprintf("% -${n}s", $final);
+			$trailer .= $format->($final);
 			$trailer .= $lastcell ? ' ' : ' |-';
 		}
 		else

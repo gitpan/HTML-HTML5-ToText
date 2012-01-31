@@ -4,6 +4,11 @@ use 5.010;
 use namespace::autoclean;
 use utf8;
 
+BEGIN {
+	$HTML::HTML5::Table::Cell::AUTHORITY = 'cpan:TOBYINK';
+	$HTML::HTML5::Table::Cell::VERSION   = '0.002';
+}
+
 use List::Util qw/max/;
 use Moose;
 use POSIX qw/ceil floor/;
@@ -46,6 +51,12 @@ has all_cols => (
 	default   => sub { [] },
 	);
 
+has default_alignment => (
+	is        => 'ro',
+	isa       => 'Str',
+	default   => 'left',
+	);
+
 sub colspan
 {
 	my ($self) = @_;
@@ -84,6 +95,30 @@ sub needs_height
 	my @lines = split /\r?\n/, $self->celltext;
 	return scalar(@lines) if $self->rowspan == 1;
 	return ceil((scalar(@lines) + 1) / $self->rowspan) - 1;
+}
+
+sub align
+{
+	my ($self) = @_;
+	if ($self->node
+	and $self->node->hasAttribute('align'))
+	{
+		return lc $self->node->getAttribute('align');
+	}
+	if ($self->col
+	and $self->col->node
+	and $self->col->node->hasAttribute('align'))
+	{
+		return lc $self->col->node->getAttribute('align');
+	}
+	if ($self->col
+	and $self->col->group
+	and $self->col->group->node
+	and $self->col->group->node->hasAttribute('align'))
+	{
+		return lc $self->col->group->node->getAttribute('align');
+	}
+	return lc $self->default_alignment;
 }
 
 1;
