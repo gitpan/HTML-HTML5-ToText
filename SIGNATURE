@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.66.
+signed via the Module::Signature module, version 0.70.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,59 +14,62 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 472c5e580c430e70d77d38d15871340725d67615 Changes
-SHA1 1d54db0b8134eb1c8ea0cee400f9dc612bcaa61a LICENSE
-SHA1 5092d36f5d9d4ee3a10451694a74e90dceca5aac MANIFEST
-SHA1 74309efcae9e72554ee5e43522821bb67658f30c META.yml
-SHA1 7150e5e086ef493e1e527a1eeec44a8344b80db6 Makefile.PL
-SHA1 8bf3641b3cef9113f6ceea350db604a5de74641a README
+SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
+SHA1 ba536c47ed85e095cfc4118174137a8b890530ec COPYRIGHT
+SHA1 70b4b8fc0c26513d2551880477f43cc88fac1700 CREDITS
+SHA1 25fe773b1c8ae788ee838952885bfd44c25f7a95 Changes
+SHA1 937d452c5c4069f4cda9ffaf45a33f1eb5f060e8 LICENSE
+SHA1 5f66451389dcaf2907166f5a33485bb35c414ced MANIFEST
+SHA1 6684ee81007ad4c7892fc4eecfdf446495c74e69 META.ttl
+SHA1 44fc32c3a94653edad2e37cd21ce6093a8b82c08 META.yml
+SHA1 5847ba4f788090acc163ed1eb21b34ec3f2ce244 Makefile.PL
+SHA1 d4c05cc9455cab014c76ee675b585d763f7edc48 README
 SHA1 96b7f351ce6844bc3d08b88090207d006a09a193 examples/basic.pl
 SHA1 6b8edbf9b62dceff4085abd3d3f93615ba5f782b examples/definitions.pl
 SHA1 843b8707731313e8f5690860a50888ec3aacb7db examples/table-stuff.pl
-SHA1 5d94bc10deff1dd74e4bc5dfa6fc015e39271f15 inc/Module/AutoInstall.pm
-SHA1 40106479d4e07f379cb82ca1d69fca92e3a40f47 inc/Module/Install.pm
-SHA1 34a24a530ecf0365cc02e4150b06c9bed702a441 inc/Module/Install/AutoInstall.pm
+SHA1 06c410f05488c1612ed66b06d3a86b2580581e4a inc/Module/AutoInstall.pm
+SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
+SHA1 61ab1dd37e33ddbe155907ce51df8a3e56ac8bbf inc/Module/Install/AutoInstall.pm
 SHA1 c04f94f91fa97b9f8cfb5a36071098ab0e6c78e3 inc/Module/Install/AutoManifest.pm
-SHA1 ae8aa01a73cb83da31c39e8eed1120c59cb530a1 inc/Module/Install/Base.pm
-SHA1 5c87d2d0e2c08b5173259006c88ad81c24303f9d inc/Module/Install/Can.pm
-SHA1 98daf9d8c50b4b7e8988cf1fa2b86044ad219533 inc/Module/Install/Fetch.pm
-SHA1 f3e008113f7f49b0625083b6cc358a312854f613 inc/Module/Install/Include.pm
-SHA1 e67589fcbacdda6c98ff34d8e26a004ab0467bdc inc/Module/Install/Makefile.pm
-SHA1 209ea405d4ab94475661bb450d0ea042d2ec25b5 inc/Module/Install/Metadata.pm
+SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
+SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
+SHA1 9e4cc10c7f138a3f2c60d9ee1f34261f0d8c5aae inc/Module/Install/Contributors.pm
+SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
+SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
+SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
+SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
 SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
-SHA1 b86d0385e10881db680d28bde94f275e49e34a27 inc/Module/Install/TrustMetaYml.pm
-SHA1 1326052d1df1065debee74f9d8583a734b9b3d00 inc/Module/Install/Win32.pm
-SHA1 bb607f3715c40fc3bc1c46496587cdb215bc4fa2 inc/Module/Install/WriteAll.pm
+SHA1 41f76ff6b39368a65da86377e43b34bacc2fb0eb inc/Module/Install/TrustMetaYml.pm
+SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
+SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
 SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
-SHA1 6b807287940754cc31a3db59f2b22e363d5525be inc/Module/Package/Dist/RDF.pm
-SHA1 775bd24f2fdbb6dce51a8b5b0cdb01fccfce83c4 inc/Scalar/Util.pm
-SHA1 b1b664983568bf822c327599eb88e223483ae96a inc/Scalar/Util/PP.pm
-SHA1 eef6bff62046bff2ce08ba132d0b58fba30f40b4 inc/YAML/Tiny.pm
-SHA1 32f9137123c960539425604990c42eb37f8085b2 lib/HTML/HTML5/Table.pm
-SHA1 5061349ebaff165bc0708ff7064c0fb3cbe4882a lib/HTML/HTML5/Table/Body.pm
-SHA1 efdd708a497a9c519f3c8d583bf2ed323586b0a0 lib/HTML/HTML5/Table/Cell.pm
-SHA1 aef0676c3f7ad55dee8cda177443dbd25d636cb7 lib/HTML/HTML5/Table/Col.pm
-SHA1 76a054ec97636ea1d10be1d6d8691a3605775b72 lib/HTML/HTML5/Table/ColGroup.pm
-SHA1 e79ccc868e1597b6730e56f77a40101341a1686a lib/HTML/HTML5/Table/Foot.pm
-SHA1 b840d24dd74f35602a33259459bac4a1b365ad15 lib/HTML/HTML5/Table/Head.pm
-SHA1 a5653214c52fc6044e38e39e0624c9b8d1a1ec9a lib/HTML/HTML5/Table/HeadCell.pm
-SHA1 69f99a0b030531d70af97580e92477aabd099ec8 lib/HTML/HTML5/Table/Row.pm
-SHA1 c8f0bb253345b1c0b22b6243219d020ab8e335de lib/HTML/HTML5/Table/Section.pm
-SHA1 777164c53ce0087270d387700ad8fc25ba7b58ff lib/HTML/HTML5/ToText.pm
-SHA1 2b20601823c554bc30e079d7f39b50c284b72fe7 lib/HTML/HTML5/ToText/Trait/RenderTables.pm
-SHA1 11401b1f6847ca891e93480ffa9b0d70f8800397 lib/HTML/HTML5/ToText/Trait/ShowImages.pm
-SHA1 ab95a3a7cb0adb2b519579a100021db9885794f1 lib/HTML/HTML5/ToText/Trait/ShowLinks.pm
-SHA1 be72a16ce9772a03755003c794ef380f8df87e25 lib/HTML/HTML5/ToText/Trait/TextFormatting.pm
-SHA1 f9b65b1b1a16d61cdcca6225cc3f87f6aaf7e02f meta/changes.ttl
-SHA1 b0b7570927e10bb7882e54418dd22251f4c6c269 meta/doap.ttl
+SHA1 5a2f84a7a82eee0d1e5ed3628fe503a608efc10f inc/Module/Package/Dist/RDF.pm
+SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
+SHA1 3809a6963bfb28e8fa20da3117c9f08d11bea2d1 lib/HTML/HTML5/Table.pm
+SHA1 0359050d94b1ae6eee4b8ed2a5cf4e28dd7f0ca3 lib/HTML/HTML5/Table/Body.pm
+SHA1 34121d4b9b7c7f67d07c2add1e19865ff282916d lib/HTML/HTML5/Table/Cell.pm
+SHA1 ea630bebe1a7dfc0ce137c5b14508da9bcede2c8 lib/HTML/HTML5/Table/Col.pm
+SHA1 ee2033ccdf94735b5043909d6c82526b43d6e159 lib/HTML/HTML5/Table/ColGroup.pm
+SHA1 f0915d3e9f98e171c9a2316ee5f94ca58a8549ae lib/HTML/HTML5/Table/Foot.pm
+SHA1 27cc63e27cf6cca80d16c4769f68f5a51604615f lib/HTML/HTML5/Table/Head.pm
+SHA1 8f6a0f2a5c1ce262dc68dbf041169597b8e77d28 lib/HTML/HTML5/Table/HeadCell.pm
+SHA1 ee08530980319a510a064aee5848fa8c50c46476 lib/HTML/HTML5/Table/Row.pm
+SHA1 0b7ce6009a7735d9971e6e26f7f28de1554a5c06 lib/HTML/HTML5/Table/Section.pm
+SHA1 5d6326aa47c9622a7a4d63f97bcaa33eef1f8c46 lib/HTML/HTML5/ToText.pm
+SHA1 4d9dc1c41634acc79e1fe51179b9190e2a216dc7 lib/HTML/HTML5/ToText/Trait/RenderTables.pm
+SHA1 19ef06ff1a56550651b0393817161bccea39d931 lib/HTML/HTML5/ToText/Trait/ShowImages.pm
+SHA1 9736b968269e3e379f9181f0c3bbb48bbd5e600f lib/HTML/HTML5/ToText/Trait/ShowLinks.pm
+SHA1 6efec8240ef3b0a20adeef0383ed23fa6c8696a5 lib/HTML/HTML5/ToText/Trait/TextFormatting.pm
+SHA1 f8d240721e70347e068e40135f33eae95c08fbdc meta/changes.ttl
+SHA1 c9701db6859dea6aab0d497516c97732fc2f36ba meta/doap.ttl
 SHA1 1df63e7ed102d69ed051b30966d52a4e1c142229 meta/makefile.ttl
 SHA1 77d11040c6db4da4e9b1d747352f0fc85daefdbf t/01basic.t
-SHA1 42ecbd580f75ca75ee4c6b05affe263d66fa216c t/02simple.t
+SHA1 a02ce2223e8d87cde62250c449d5b461d3528adf t/02simple.t
 SHA1 b18154b423ef1099bdd735f35a6781ee12e22807 t/03tables.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
+Version: GnuPG v1.4.11 (GNU/Linux)
 
-iEYEARECAAYFAk8nxiMACgkQzr+BKGoqfTmkIQCgrSOqZhWkMNvJP9JgIsSeiutt
-R5UAn1a8oaY+UxGUpiSh/5pGy/+faWl0
-=t+kr
+iEYEARECAAYFAlGRCVIACgkQzr+BKGoqfTnBiQCfS4uWOxJphb7NQiUKKmJdONK7
+4O0AnieD0axgj8hzwQlbpWT2H2SbIgYR
+=kO7A
 -----END PGP SIGNATURE-----

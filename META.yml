@@ -3,12 +3,13 @@ abstract: 'convert HTML to plain text'
 author:
   - 'Toby Inkster <tobyink@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
   Test::More: 0.61
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
+  ExtUtils::MakeMaker: 6.59
 distribution_type: module
-generated_by: 'Module::Install version 1.02'
+dynamic_config: 0
+generated_by: 'Module::Install version 1.06'
 keywords: []
 license: perl
 meta-spec:
@@ -38,5 +39,7 @@ resources:
   bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=HTML-HTML5-ToText
   homepage: https://metacpan.org/release/HTML-HTML5-ToText
   license: http://dev.perl.org/licenses/
-  repository: https://bitbucket.org/tobyink/p5-html-html5-totext
-version: 0.002
+  repository: https://github.com/tobyink/p5-html-html5-totext
+version: 0.003
+x_contributors:
+  - 'Toby Inkster <tobyink@cpan.org>'
