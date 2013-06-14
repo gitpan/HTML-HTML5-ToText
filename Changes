@@ -5,9 +5,14 @@ Created:      2012-01-30
 Home page:    <https://metacpan.org/release/HTML-HTML5-ToText>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=HTML-HTML5-ToText>
 
+0.004  2013-06-14
+
+ - (Bugfix) Cope better with HTML comments in tables.
+ - (Update) Stop using smartmatch operator.
+
 0.003  2013-05-13
 
- - Cope better with HTML comments.
+ - (Bugfix) Cope better with HTML comments.
 
 0.002  2012-01-31
 
